@@ -1,0 +1,21 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+
+{% block content %}
+
+    <hr>
+    {{ flatpage.content }}
+    <style>
+    span {
+    font-size: 120%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: red;
+    }
+    </style>
+    {{ flatpage.content }}
+{% endblock content %}
+

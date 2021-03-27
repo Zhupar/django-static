@@ -1,0 +1,13 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+<hr>
+{% endblock title %}
+
+
+{% block content %}
+    {% load static %}
+    <img src='{% static "img/1.jpg" %}' alt='spring' width="350" height="200"/>
+    {{ flatpage.content }}
+{% endblock content %}
